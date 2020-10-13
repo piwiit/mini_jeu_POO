@@ -8,19 +8,24 @@ require_relative 'lib/player'
 
 player1 = Player.new('Jacky')
 player2 = Player.new('Michel')
+puts
 puts "Voici l'état de chaque joueur :\n\n"
 puts player1.show_state
 puts player2.show_state
 
-puts "Passons à la phase d'attaque :"
+puts " =====| FIGHT ! |==== \n\n "
 
 while player1.life_point.positive? && player2.life_point.positive?
+  puts player1.show_state
+  puts player2.show_state
+
   player1.attacks(player2)
   next unless player2.life_point.positive?
 
   player2.attacks(player1)
   puts
-  puts ' =====|next round |==== '
+  puts
+  puts " =====|next round |====\n\n "
 
 end
 
