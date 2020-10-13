@@ -1,7 +1,8 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-    ruby '2.7.1'
-    gem 'rspec'
-    gem 'pry'
-    gem 'rubocop'
-  
+source 'https://rubygems.org'
+
+ruby '2.7.1'
+gem 'pry'
+gem 'rspec'
+gem 'rubocop'
